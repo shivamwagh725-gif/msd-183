@@ -1,0 +1,38 @@
+function validateForm() {
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+
+    let valid = true;
+
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("mobileError").innerHTML = "";
+
+
+    if (name === "") {
+        document.getElementById("nameError").innerHTML = "Name is required";
+        valid = false;
+    } else if (!/^[A-Za-z ]+$/.test(name)) {
+        document.getElementById("nameError").innerHTML = "Name must contain only letters";
+        valid = false;
+    }
+
+    if (email === "") {
+        document.getElementById("emailError").innerHTML = "Email is required";
+        valid = false;
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+        document.getElementById("emailError").innerHTML = "Enter a valid email";
+        valid = false;
+    }
+
+    if (mobile === "") {
+        document.getElementById("mobileError").innerHTML = "Mobile Number is required";
+        valid = false;
+    } else if (!/^[0-9]{10}$/.test(mobile)) {
+        document.getElementById("mobileError").innerHTML = "Mobile must be 10 digits";
+        valid = false;
+    }
+
+    return valid;
+}
