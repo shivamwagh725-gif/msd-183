@@ -1,0 +1,89 @@
+body{
+    font-family: Arial;
+    background: #eef2f3;
+    margin: 0;
+}
+
+.login-box{
+    width: 320px;
+    background: white;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #aaa;
+    text-align: center;
+}
+
+.login-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-box button{
+    width: 100%;
+    padding: 10px;
+    background: #0078d7;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.msg{
+    color: red;
+    margin-top: 10px;
+}
+
+/* Dashboard */
+.topbar{
+    background: #0078d7;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 90%;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px #aaa;
+}
+
+.add-btn{
+    background: #28a745;
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit{
+    background: orange;
+    border: none;
+    color: white;
+}
+
+.del{
+    background: red;
+    border: none;
+    color: white;
+}

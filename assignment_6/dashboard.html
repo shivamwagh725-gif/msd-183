@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <h2>Admin Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="box">
+    <h3>Event List</h3>
+
+    <button class="add-btn" onclick="addEvent()">+ Add Event</button>
+
+    <table id="eventTable">
+        <tr>
+            <th>ID</th>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
