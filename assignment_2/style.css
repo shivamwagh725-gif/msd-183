@@ -1,0 +1,143 @@
+:root {
+    --blue:#4a6fa5;
+    --blue-dark:#3b5a84;
+    --bg:#f3f4f6;
+    --text:#1f1f1f;
+    --muted:#6c6c6c;
+    --card:#ffffff;
+    --border:#dcdcdc;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    background:var(--bg);
+    font-family:Arial, sans-serif;
+    color:var(--text);
+}
+
+.header {
+    background:var(--card);
+    border-bottom:1px solid var(--border);
+}
+
+.wrap {
+    max-width:1050px;
+    margin:auto;
+    padding:18px;
+}
+
+.nav {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo {
+    margin:0;
+    color:var(--blue-dark);
+}
+
+nav ul {
+    list-style:none;
+    display:flex;
+    gap:10px;
+    padding:0;
+    margin:0;
+}
+
+nav a {
+    text-decoration:none;
+    padding:8px 12px;
+    color:var(--blue);
+    border-radius:6px;
+}
+
+nav a.active {
+    background:var(--blue);
+    color:#fff;
+}
+
+nav a:hover {
+    background:#e4eaf3;
+}
+
+.title {
+    margin:10px 0;
+}
+
+.subtitle {
+    color:var(--muted);
+    margin-bottom:20px;
+}
+
+.event-grid {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.event-card {
+    background:var(--card);
+    padding:18px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    box-shadow:0 2px 5px rgba(0,0,0,0.04);
+}
+
+.event-card h3 {
+    margin-top:0;
+}
+
+.info {
+    color:var(--muted);
+    font-size:0.9rem;
+}
+
+.button {
+    display:inline-block;
+    margin-top:22px;
+    background:var(--blue);
+    color:#fff;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.button:hover {
+    background:var(--blue-dark);
+}
+
+.footer {
+    border-top:1px solid var(--border);
+    margin-top:30px;
+    background:var(--card);
+    color:var(--muted);
+}
+
+@media (min-width:500px) {
+    .event-grid {
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (min-width:800px) {
+    .event-grid {
+        grid-template-columns:repeat(3,1fr);
+    }
+    .logo {
+        font-size:1.3rem;
+    }
+    .wrap {
+        padding:22px;
+    }
+}
+
+@media (min-width:1050px) {
+    body {
+        font-size:17px;
+    }
+}
