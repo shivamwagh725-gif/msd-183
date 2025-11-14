@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Participant List - Simple UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 class="title">Event Participant List</h2>
+
+  <div class="controls">
+    <select id="eventSelect"></select>
+    <input type="text" id="search" placeholder="Search participants...">
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Reg No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <p id="emptyMsg" class="empty">No participants found.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
